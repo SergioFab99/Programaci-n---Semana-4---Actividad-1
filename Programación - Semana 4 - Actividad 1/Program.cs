@@ -39,29 +39,4 @@ class Program
         Console.WriteLine("3. Opción 3");
         Console.WriteLine("4. Salir");
     }
-    class Calculadora
-    {
-        public int Sumar(int a, int b)
-        {
-            return a + b;
-        }
-
-        public int Restar(int a, int b)
-        {
-            return a - b;
-        }
-
-        public int Multiplicar(int a, int b)
-        {
-            return a * b;
-        }
-
-        public int Dividir(int a, int b)
-        {
-            if (b != 0)
-                return a / b;
-            else
-                throw new DivideByZeroException("No se puede dividir por cero.");
-        }
-    }
 }
