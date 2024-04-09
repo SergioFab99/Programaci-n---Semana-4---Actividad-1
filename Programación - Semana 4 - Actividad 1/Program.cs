@@ -39,4 +39,20 @@ class Program
         Console.WriteLine("3. Opción 3");
         Console.WriteLine("4. Salir");
     }
+    static int CalcularFibonacci(int n)
+    {
+        if (n <= 0)
+            return 0;
+        if (n == 1)
+            return 1;
+
+        int a = 0, b = 1, resultado = 0;
+        for (int i = 2; i <= n; i++)
+        {
+            resultado = a + b;
+            a = b;
+            b = resultado;
+        }
+        return resultado;
+    }
 }
